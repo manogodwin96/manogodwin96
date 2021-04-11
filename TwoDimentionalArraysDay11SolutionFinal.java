@@ -9,11 +9,13 @@ public class TwoDimentionalArraysDay11SolutionFinal {
         for(int i=0;i<6;i++){
             String[] arrRowItems = scanner.nextLine().split(" ");
             //scanner.skip("(\\r\\n|[\\n\\r\\u2028\\u2029\\u0085])?");
+            //scanner.close();
             for (int j=0;j<6;j++){
                 int arrItem = Integer.parseInt(arrRowItems[j]);
                 arr[i][j] = arrItem;
             }
         }
+        scanner.close();
         int highValue = -9*6;
         for(int i=0;i<4;i++){
             for (int j=0;j<4;j++){
